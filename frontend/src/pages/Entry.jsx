@@ -23,7 +23,7 @@ const Entry = () => {
             <div
                 className="absolute inset-0 bg-cover bg-center -z-50"
                 style={{
-                    backgroundImage: "url('https://www.invest19.com/blog/wp-content/uploads/2020/04/should-bet-on-banking-sector-1.jpg')",
+                    backgroundImage: "url('https://www.banwo-ighodalo.com/assets/grey-matter/90f0860e3476ab3b271fd8d608253ef4.jpg')",
                     opacity: 0.8,
                 }}
             />
