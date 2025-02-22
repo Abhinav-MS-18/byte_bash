@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Alert, Button, Label, TextInput } from 'flowbite-react';
 import { useNavigate } from "react-router-dom";
-import img from '../assets/Login/img.jpg';
+import img from '../assets/Login/login.jpg';
 
 const Login = () => {
     const [upiId, setUpiId] = useState("");
