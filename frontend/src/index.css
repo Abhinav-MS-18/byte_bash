@@ -1,3 +1,96 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* styles.css or global CSS */
+@keyframes slideDown {
+  0% {
+      transform: translateY(-100%); /* Start above */
+      opacity: 0; /* Invisible */
+  }
+  100% {
+      transform: translateY(0); /* End at normal position */
+      opacity: 1; /* Fully visible */
+  }
+}
+
+@keyframes slideUp {
+  0% {
+      transform: translateY(100%); /* Start below */
+      opacity: 0; /* Invisible */
+  }
+  100% {
+      transform: translateY(0); /* End at normal position */
+      opacity: 1; /* Fully visible */
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.7s ease-out forwards; /* Adjust duration as needed */
+}
+
+.animate-slide-up {
+  animation: slideUp 0.7s ease-out forwards; /* Adjust duration as needed */
+}
+@keyframes slide-down {
+  0% {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.5s forwards; /* adjust duration as needed */
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s forwards; /* adjust duration as needed */
+}
+.fade {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust values for desired shadow effect */
+}
+/* Slant effect for the form section */
+.clip-slant {
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Internet Explorer and Edge */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+}

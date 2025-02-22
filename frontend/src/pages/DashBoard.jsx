@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import SideBar from '../component/SideBar';
-import TransferMoney from '../component/BorrowMoney';
-import Repay from '../component/Repay';
-import ViewTransactions from '../component/ViewTransactions';
-import ViewBalance from '../component/ViewBalance';
-import LendMoney from '../component/LendMoney';
-import BorrowMoney from '../component/BorrowMoney';
-import Notification from '../component/Notification';
-import Main from '../component/Main';
+import SideBar from '../components/SideBar';
+import TransferMoney from '../components/BorrowMoney';
+import Repay from '../components/Repay';
+import ViewTransactions from '../components/ViewTransactions';
+import ViewBalance from '../components/ViewBalance';
+import LendMoney from '../components/LendMoney';
+import BorrowMoney from '../components/BorrowMoney';
+import Notification from '../components/Notification';
+import Main from '../components/Main';
 // sdvds
 const DashBoard = () => {
     const location = useLocation();
