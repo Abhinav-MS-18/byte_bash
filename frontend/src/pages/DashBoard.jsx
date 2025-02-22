@@ -23,11 +23,11 @@ const DashBoard = () => {
             <div className='w-full md:w-56'>
                 <SideBar />
             </div>
-            {tag == 'transactions' && <ViewTransactions />}
+            {/* {tag == 'transactions' && <ViewTransactions />} */}
             {tag == 'borrow' && <BorrowMoney />}
             {tag == "lend" && <LendMoney />}
             {tag == "repay" && <Repay />}
-            {tag == "balance" && <ViewBalance />}
+            {/* {tag == "balance" && <ViewBalance />} */}
             {tag == "home" && <Main />}
 
         </div>
