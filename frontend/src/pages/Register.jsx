@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Alert, Button, Label, TextInput } from "flowbite-react";
 import { useNavigate } from "react-router-dom";
-import img from "../assets/Register/reg.jpg";
+import img from "../assets/Register/reg.png";
 
 const Register = () => {
   const [step, setStep] = useState(1);
