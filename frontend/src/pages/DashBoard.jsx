@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import SideBar from '../components/SideBar';
-import TransferMoney from '../components/BorrowMoney';
 import Repay from '../components/Repay';
 import ViewTransactions from '../components/ViewTransactions';
 import ViewBalance from '../components/ViewBalance';
 import LendMoney from '../components/LendMoney';
 import BorrowMoney from '../components/BorrowMoney';
-import Notification from '../components/Notification';
 import Main from '../components/Main';
 // sdvds
 const DashBoard = () => {
@@ -30,7 +28,6 @@ const DashBoard = () => {
             {tag == "lend" && <LendMoney />}
             {tag == "repay" && <Repay />}
             {tag == "balance" && <ViewBalance />}
-            {tag == "notification" && <Notification />}
             {tag == "home" && <Main />}
 
         </div>

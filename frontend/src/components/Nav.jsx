@@ -71,8 +71,8 @@ const Nav = () => {
                 <Navbar.Link href="/main?tag=home" active>
                     Home
                 </Navbar.Link>
-                <Navbar.Link href="#">About</Navbar.Link>
-                <Navbar.Link href="/main?tag=notification">Notifications</Navbar.Link>
+                {/* <Navbar.Link href="#">About</Navbar.Link> */}
+                {/* <Navbar.Link href="/main?tag=notification">Notifications</Navbar.Link> */}
 
             </Navbar.Collapse>
         </Navbar>
