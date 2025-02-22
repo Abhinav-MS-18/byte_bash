@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes, useLocation, Navigate } from "react-route
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Entry from "./pages/Entry";
-import DashBoard from "./pages/Dashboard";
+import DashBoard from "./pages/DashBoard";
 import Nav from "./components/Nav";
 
 
@@ -21,31 +21,6 @@ function AppContent() {
 
   return (
     <>
-      {!hideNavRoutes.includes(location.pathname) && <Nav />}
-      <Routes>
-        <Route path="/" element={<Entry />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route
-          path="/main"
-          element={
-            <ProtectedRoute>
-              <DashBoard />
-            </ProtectedRoute>
-          }
-        />
-      </Routes>
-    </>
-  );
-}
-
-function App() {
-
-  return (
-    <BrowserRouter>
-      <AppContent />
-    </BrowserRouter>
-  );
       {!hideNavRoutes.includes(location.pathname) && <Nav />}
       <Routes>
         <Route path="/" element={<Entry />} />
